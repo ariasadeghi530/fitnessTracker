@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model('workout', new mongoose.Schema({
- {
+ 
   day: Date,
   exercises: [
     {
@@ -10,9 +10,9 @@ module.exports = mongoose.model('workout', new mongoose.Schema({
       duration: Number,
       weight: Number,
       reps: Number,
-      sets: Number,
+      sets: Number
     }
   ]
-}
+
 })
 );
