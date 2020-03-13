@@ -16,7 +16,7 @@ router.get('/workouts', (req, res) => {
     .catch(e => console.log(e));
   });
   
-  router.get('/workout/range', (req, res) => {
+  router.get('/workouts/range', (req, res) => {
     Workout.find(req.body).limit(7)
     .then((workout) => {
       res.json(workout)
